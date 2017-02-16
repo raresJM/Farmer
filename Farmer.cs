@@ -7,8 +7,9 @@ namespace Farmer
     public class Farmer
     {
         [TestMethod]
-        public void TestMethod1()
+        public void TestResult()
         {
+            Assert.AreEqual(565.64, calculateResult());
         }
     }
 }
