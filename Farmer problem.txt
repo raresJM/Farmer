@@ -1,0 +1,7 @@
+Terenul fermierului
+
+Un fermier are un teren patrat. 
+Pentru a-?i extinde suprafa?a a mai cumparat o parcela alaturata.
+Noua parcela are accea?i lungime ?i are o la?ime de 230m. 
+Acum fermierul are un teren de 77ha (770.000mp).
+Ce dimensiune avea ini?ial terenul?
