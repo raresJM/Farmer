@@ -14,7 +14,7 @@ namespace Farmer
         [TestMethod]
         public void TestResult_newWidth_10_finalArea_11()
         {
-            Assert.AreEqual(11, calculateResult(10,11));
+            Assert.AreEqual(11, calculateResult(10,11)); 
         }
 
 
