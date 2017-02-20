@@ -11,6 +11,10 @@ namespace Farmer
         {
             Assert.AreEqual(565.64, calculateResult());
         }
+
+
+
+
         public double calculateResult()
         {
             double result, result1, result2 = 0;
