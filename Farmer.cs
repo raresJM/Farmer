@@ -9,26 +9,27 @@ namespace Farmer
         [TestMethod]
         public void TestResult()
         {
-            Assert.AreEqual(565.64, calculateResult());
+            Assert.AreEqual(770, calculateResult(230,770000));
         }
         [TestMethod]
         public void TestResult_newWidth_10_finalArea_11()
         {
-            Assert.AreEqual(11, calculateResult(10,11)); 
+            Assert.AreEqual(1, calculateResult(10,11)); 
+        }
+        [TestMethod]
+        public void TestResult_newWidth_10_finalArea_24()
+        {
+            Assert.AreEqual(2, calculateResult(10, 24));
         }
 
-
-
-
         //refactored method to accept parameters: 
-        // length - square length, 
-        // b -   width of the adjacent landplot
+        // finalArea - final Area of the final landplot, 
+        // newWidth -   width of the adjacent landplot
         public double calculateResult(double newWidth, double finalArea)
         {
-            double result, result1;
-            result1 = (-width + Math.Sqrt(width * width - 4 * 2 * (-770000)))/4;
-            result2 = (-width - Math.Sqrt(width * width - 4 * 2 * (-770000)))/4;
-
+            double result, result1, result2;
+            result1 = (-newWidth + Math.Sqrt(newWidth * newWidth - 4 * (-finalArea)))/2;
+            result2 = (-newWidth - Math.Sqrt(newWidth * newWidth - 4 * (-finalArea)))/2;
             if (result1 > 0)
             {
                 result = Math.Round(result1, 2);
